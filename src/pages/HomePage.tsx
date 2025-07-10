@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      <VideoBackground videoSrc="https://images.pexels.com/videos/3045163/free-video-3045163.mp4" />
+      <VideoBackground videoSrc=".src/assets/gen.mp4" />
       
       <header className="header">
         <Navigation />

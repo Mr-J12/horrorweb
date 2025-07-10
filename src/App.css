@@ -93,9 +93,10 @@ body {
 
 .h-text {
   max-width: 650px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 12%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;

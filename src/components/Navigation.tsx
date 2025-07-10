@@ -13,7 +13,7 @@ const Navigation: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Paranormal<br />Blog
+        Paranormal<br />Website
       </motion.div>
       
       <motion.div 
