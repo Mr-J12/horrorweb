@@ -66,7 +66,7 @@ const DemonologyPage: React.FC = () => {
   if (category && demons[category as keyof typeof demons]) {
     return (
       <div>
-        <VideoBackground videoSrc="https://images.pexels.com/videos/3045163/free-video-3045163.mp4" />
+        <VideoBackground videoSrc="" />
         
         <header className="header">
           <Navigation />
@@ -111,7 +111,7 @@ const DemonologyPage: React.FC = () => {
 
   return (
     <div>
-      <VideoBackground videoSrc="https://images.pexels.com/videos/3045163/free-video-3045163.mp4" />
+      <VideoBackground videoSrc="/mgr.mp4" />
       
       <header className="header">
         <Navigation />

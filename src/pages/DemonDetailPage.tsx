@@ -26,7 +26,7 @@ const DemonDetailPage: React.FC = () => {
     'lucifer': {
       name: 'Lucifer',
       title: 'King of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/ll.jpg',
       origin: 'In the annals of heaven, Lucifer was distinguished not only by his resplendent beauty but also by his keen intellect and ambition. Hailing from the brightest reaches of creation, he was the jewel of the celestial crown. However, his unyielding pride and growing resentment toward God\'s new creations, specifically humans, clouded his judgment.',
       characteristics: 'Lucifer is a master of metamorphosis. While his true form reflects an ethereal and majestic beauty, with flickering wings of radiant light, when he seeks to terrorize, he appears as a crimson entity, with sharp horns and burning eyes that consume everything in his path.',
       dominion: 'Lucifer has a particular interest in human vices and weaknesses. He unleashes envy, greed, and lust in the hearts of men, seizing any opportunity to lead them astray. His ability to manipulate fire and air, as well as his influence over the human mind, makes him a formidable and dangerous force.',
@@ -42,7 +42,7 @@ const DemonDetailPage: React.FC = () => {
   if (!demon) {
     return (
       <div>
-        <VideoBackground videoSrc="https://images.pexels.com/videos/3045163/free-video-3045163.mp4" />
+        <VideoBackground videoSrc="" />
         <header className="header">
           <Navigation />
           <motion.section className="h-text">
@@ -58,7 +58,7 @@ const DemonDetailPage: React.FC = () => {
 
   return (
     <div>
-      <VideoBackground videoSrc="https://images.pexels.com/videos/3045163/free-video-3045163.mp4" />
+      <VideoBackground videoSrc="" />
       
       <header className="header">
         <Navigation />
@@ -114,7 +114,6 @@ const DemonDetailPage: React.FC = () => {
           </div>
         </motion.div>
       </div>
-
       <Footer />
     </div>
   );

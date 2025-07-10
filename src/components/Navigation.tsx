@@ -32,7 +32,7 @@ const Navigation: React.FC = () => {
           Stories
         </Link>
         <Link to="/real-life" className={location.pathname.includes('/real-life') ? 'active' : ''}>
-          RL Incidents
+          Incidents
         </Link>
       </motion.div>
       
