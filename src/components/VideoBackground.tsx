@@ -20,8 +20,6 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({ videoSrc, fallbackIma
       }}
     >
       <source src={videoSrc} type="video/mp4" />
-      <source src={videoSrc.replace('.mp4', '.webm')} type="video/webm" />
-      <source src={videoSrc.replace('.mp4', '.ogg')} type="video/ogg" />
     </video>
   );
 };
