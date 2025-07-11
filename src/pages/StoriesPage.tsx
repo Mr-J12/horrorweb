@@ -97,7 +97,7 @@ const StoriesPage: React.FC = () => {
           style={{ textAlign: 'center', marginTop: '40px' }}
         >
           <h3>Share Your Own Story</h3>
-          <p>Have a paranormal experience you'd like to share? We'd love to hear from you.</p>
+          <p>Had a paranormal experience you'd like to share? We'd love to hear from you.</p>
           <button 
             className="btn" 
             onClick={() => navigate('/share-story')}
