@@ -108,6 +108,20 @@ body {
   transition: text-shadow 0.3s ease;  
 }
 
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-section .contact {
+  color: #ff0000;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
 .h-text {
   max-width: 650px;
   margin: 0 auto;

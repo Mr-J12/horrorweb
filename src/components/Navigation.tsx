@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import AuthButton from './AuthButton';
 
 const Navigation: React.FC = () => {
   const location = useLocation();
@@ -37,12 +38,14 @@ const Navigation: React.FC = () => {
       </motion.div>
       
       <motion.div 
-        className="contact"
+        className="auth-section"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
+        style={{ display: 'flex', gap: '15px', alignItems: 'center' }}
       >
-        <Link to="/feedback">Feedback</Link>
+        <Link to="/feedback" className="contact">Feedback</Link>
+        <AuthButton />
       </motion.div>
     </nav>
   );
