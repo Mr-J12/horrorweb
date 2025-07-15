@@ -63,7 +63,7 @@ const AuthButton: React.FC = () => {
           fontSize: '14px',
           fontFamily: 'Courier New, Courier, monospace'
         }}>
-          Welcome back!
+
         </span>
         <button
           onClick={handleLogout}
