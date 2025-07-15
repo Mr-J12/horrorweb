@@ -52,9 +52,9 @@ const AuthPage: React.FC = () => {
             .from('users')
             .insert([
               {
-                id: data.user.id,
-                email: formData.email,
-                username: formData.username
+              id: data.user.id,
+              email: formData.email,
+              username: formData.username
               }
             ]);
           
