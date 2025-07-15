@@ -7,7 +7,6 @@ if (!supabaseUrl || !supabaseAnonKey) {
   throw new Error('Supabase environment variables are missing');
 }
 
-// Validate URL format
 try {
   new URL(supabaseUrl);
 } catch (error) {
