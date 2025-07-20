@@ -37,35 +37,7 @@ const ShareStoryPage: React.FC = () => {
         return;
       }
 
-      // Ensure user profile exists in users table
-      const { data: existingUser, error: userCheckError } = await supabase
-        .from('users')
-        .select('user_id')
-        .eq('user_id', user.id)
-        .single();
-      
-      if (userCheckError && userCheckError.code !== 'PGRST116') {
-        throw new Error(`Error checking user profile: ${userCheckError.message}`);
-      }
-      
-      // If user profile doesn't exist, create it
-      if (!existingUser) {
-        const { error: profileError } = await supabase
-          .from('users')
-          .insert([
-            {
-              user_id: user.id,
-              email: user.email || 'unknown@example.com',
-              username: user.email?.split('@')[0] || 'user'
-            }
-          ]);
-        
-        if (profileError) {
-          throw new Error(`Error creating user profile: ${profileError.message}`);
-        }
-      }
-
-      // Now insert the story
+      // Insert the story
       const { error } = await supabase
         .from('stories')
         .insert([
@@ -87,7 +59,11 @@ const ShareStoryPage: React.FC = () => {
       }, 2000);
     } catch (error: any) {
       console.error('Error sharing story:', error);
-      setMessage(`Error sharing story: ${error.message || 'Please try again.'}`);
+      if (error.code === '23503') {
+        setMessage('Please complete your profile setup by logging out and signing in again.');
+      } else {
+        setMessage(`Error sharing story: ${error.message || 'Please try again.'}`);
+      }
     } finally {
       setIsSubmitting(false);
     }
