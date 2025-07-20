@@ -59,7 +59,7 @@ const AuthPage: React.FC = () => {
               ]);
             
             if (profileError) {
-              console.warn('Could not create user profile:', profileError);
+              throw profileError;
             }
           }
         }
