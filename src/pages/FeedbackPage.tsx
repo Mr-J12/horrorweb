@@ -29,32 +29,24 @@ const FeedbackPage: React.FC = () => {
     setMessage('');
 
     try {
-      // Check if we're in demo mode
-      if (import.meta.env.VITE_SUPABASE_URL === 'your-supabase-url-here') {
-        // Demo mode - simulate successful submission
-        setMessage('Demo mode: Your feedback would be submitted successfully in a real environment!');
-        setFormData({ username: '', email: '', feedback: '' });
-        setIsSubmitting(false);
-        setTimeout(() => {
-          navigate('/');
-        }, 2000);
-        return;
-      }
-
       const { data: { user } } = await supabase.auth.getUser();
       
       if (!user) {
-        setMessage('Please sign in to submit feedback. In demo mode, authentication is simulated.');
+        setMessage('Please sign in to submit feedback.');
         setIsSubmitting(false);
         return;
       }
 
+      // For feedback, we'll create a simple feedback entry without foreign key constraints
+      // Since there's no feedback table in the schema, we'll store it as a story with a special marker
       const { error } = await supabase
-        .from('feedback')
+        .from('stories')
         .insert([
           {
-            user_id: user.id,
-            content: `Username: ${formData.username}\nEmail: ${formData.email}\nFeedback: ${formData.feedback}`
+            title: `Feedback from ${formData.username}`,
+            content: `Username: ${formData.username}\nEmail: ${formData.email}\nFeedback: ${formData.feedback}`,
+            image_url: null,
+            user_id: user.id
           }
         ]);
 
@@ -68,11 +60,7 @@ const FeedbackPage: React.FC = () => {
       }, 2000);
     } catch (error: any) {
       console.error('Error submitting feedback:', error);
-      if (error.message?.includes('Invalid API key') || error.message?.includes('supabase')) {
-        setMessage('Demo mode: Database connection not available. Your feedback would be saved in a real environment!');
-      } else {
-        setMessage(`Error submitting feedback: ${error.message || 'Please try again.'}`);
-      }
+      setMessage(`Error submitting feedback: ${error.message || 'Please try again.'}`);
     } finally {
       setIsSubmitting(false);
     }

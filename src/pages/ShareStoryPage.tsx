@@ -29,23 +29,43 @@ const ShareStoryPage: React.FC = () => {
     setMessage('');
 
     try {
-      // Check if we're in demo mode
-      if (import.meta.env.VITE_SUPABASE_URL === 'your-supabase-url-here') {
-        // Demo mode - simulate successful submission
-        setMessage('Demo mode: Your story would be shared successfully in a real environment!');
-        setFormData({ title: '', content: '', imageUrl: '' });
-        setIsSubmitting(false);
-        return;
-      }
-
       const { data: { user } } = await supabase.auth.getUser();
       
       if (!user) {
-        setMessage('Please sign in to share your story. In demo mode, authentication is simulated.');
+        setMessage('Please sign in to share your story.');
         setIsSubmitting(false);
         return;
       }
 
+      // Ensure user profile exists in users table
+      const { data: existingUser, error: userCheckError } = await supabase
+        .from('users')
+        .select('user_id')
+        .eq('user_id', user.id)
+        .single();
+      
+      if (userCheckError && userCheckError.code !== 'PGRST116') {
+        throw new Error(`Error checking user profile: ${userCheckError.message}`);
+      }
+      
+      // If user profile doesn't exist, create it
+      if (!existingUser) {
+        const { error: profileError } = await supabase
+          .from('users')
+          .insert([
+            {
+              user_id: user.id,
+              email: user.email || 'unknown@example.com',
+              username: user.email?.split('@')[0] || 'user'
+            }
+          ]);
+        
+        if (profileError) {
+          throw new Error(`Error creating user profile: ${profileError.message}`);
+        }
+      }
+
+      // Now insert the story
       const { error } = await supabase
         .from('stories')
         .insert([
@@ -67,11 +87,7 @@ const ShareStoryPage: React.FC = () => {
       }, 2000);
     } catch (error: any) {
       console.error('Error sharing story:', error);
-      if (error.message?.includes('Invalid API key') || error.message?.includes('supabase')) {
-        setMessage('Demo mode: Database connection not available. Your story would be saved in a real environment!');
-      } else {
-        setMessage(`Error sharing story: ${error.message || 'Please try again.'}`);
-      }
+      setMessage(`Error sharing story: ${error.message || 'Please try again.'}`);
     } finally {
       setIsSubmitting(false);
     }
