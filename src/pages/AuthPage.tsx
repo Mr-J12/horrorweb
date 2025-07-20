@@ -69,7 +69,12 @@ const AuthPage: React.FC = () => {
       } else {
         const { error } = await supabase.auth.signUp({
           email: formData.email,
-          password: formData.password
+          password: formData.password,
+          options: {
+            data: {
+              username: formData.username
+            }
+          }
         });
         
         if (error) throw error;
