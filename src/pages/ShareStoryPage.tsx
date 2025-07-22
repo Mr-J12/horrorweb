@@ -29,23 +29,15 @@ const ShareStoryPage: React.FC = () => {
     setMessage('');
 
     try {
-      // Check if we're in demo mode
-      if (import.meta.env.VITE_SUPABASE_URL === 'your-supabase-url-here') {
-        // Demo mode - simulate successful submission
-        setMessage('Demo mode: Your story would be shared successfully in a real environment!');
-        setFormData({ title: '', content: '', imageUrl: '' });
-        setIsSubmitting(false);
-        return;
-      }
-
       const { data: { user } } = await supabase.auth.getUser();
       
       if (!user) {
-        setMessage('Please sign in to share your story. In demo mode, authentication is simulated.');
+        setMessage('Please sign in to share your story.');
         setIsSubmitting(false);
         return;
       }
 
+      // Insert the story
       const { error } = await supabase
         .from('stories')
         .insert([
@@ -67,8 +59,8 @@ const ShareStoryPage: React.FC = () => {
       }, 2000);
     } catch (error: any) {
       console.error('Error sharing story:', error);
-      if (error.message?.includes('Invalid API key') || error.message?.includes('supabase')) {
-        setMessage('Demo mode: Database connection not available. Your story would be saved in a real environment!');
+      if (error.code === '23503') {
+        setMessage('Please complete your profile setup by logging out and signing in again.');
       } else {
         setMessage(`Error sharing story: ${error.message || 'Please try again.'}`);
       }

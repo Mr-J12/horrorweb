@@ -68,27 +68,17 @@ const AuthPage: React.FC = () => {
         setMessage('Successfully logged in!');
         setTimeout(() => navigate('/'), 1000);
       } else {
-        const { data, error } = await supabase.auth.signUp({
+        const { error } = await supabase.auth.signUp({
           email: formData.email,
-          password: formData.password
+          password: formData.password,
+          options: {
+            data: {
+              username: formData.username
+            }
+          }
         });
         
         if (error) throw error;
-        
-        if (data.user) {
-          // Create user profile
-          const { error: profileError } = await supabase
-            .from('users')
-            .insert([
-              {
-              user_id: data.user.id,
-              email: formData.email,
-              username: formData.username
-              }
-            ]);
-          
-          if (profileError) throw profileError;
-        }
         
         setMessage('Account created successfully! Please check your email to verify your account.');
       }
