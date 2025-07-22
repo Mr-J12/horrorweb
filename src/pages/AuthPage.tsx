@@ -45,7 +45,7 @@ const AuthPage: React.FC = () => {
             .select('user_id')
             .eq('user_id', user.id)
             .single();
-          
+
           // If no profile exists, create one
           if (!existingUser) {
             const { error: profileError } = await supabase
@@ -54,7 +54,8 @@ const AuthPage: React.FC = () => {
                 {
                   user_id: user.id,
                   email: user.email || formData.email,
-                  username: user.email?.split('@')[0] || 'user'
+                  username: user?.email ? user.email.split('@')[0] : 'user'
+
                 }
               ]);
             
