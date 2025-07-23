@@ -49,7 +49,7 @@ const AuthPage: React.FC = () => {
                 username: user?.email ? user.email.split('@')[0] : 'user'
               }
             ], {
-              onConflict: 'user_id'
+              onConflict: 'email'
             });
           
           if (profileError) {
