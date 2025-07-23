@@ -40,12 +40,11 @@ const FeedbackPage: React.FC = () => {
       // For feedback, we'll create a simple feedback entry without foreign key constraints
       // Since there's no feedback table in the schema, we'll store it as a story with a special marker
       const { error } = await supabase
-        .from('stories')
+        .from('feedback')
         .insert([
           {
             title: `Feedback from ${formData.username}`,
-            content: `Username: ${formData.username}\nEmail: ${formData.email}\nFeedback: ${formData.feedback}`,
-            image_url: null,
+            content: `Feedback: ${formData.feedback}`,
             user_id: user.id
           }
         ]);
