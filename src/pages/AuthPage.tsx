@@ -39,29 +39,21 @@ const AuthPage: React.FC = () => {
         // Ensure user profile exists in users table
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
-          // Check if user profile exists
-          const { data: existingUser } = await supabase
+          // Use upsert to create or update user profile
+          const { error: profileError } = await supabase
             .from('users')
-            .select('user_id')
-            .eq('user_id', user.id)
-            .single();
-
-          // If no profile exists, create one
-          if (!existingUser) {
-            const { error: profileError } = await supabase
-              .from('users')
-              .insert([
-                {
-                  user_id: user.id,
-                  email: user.email || formData.email,
-                  username: user?.email ? user.email.split('@')[0] : 'user'
-
-                }
-              ]);
-            
-            if (profileError) {
-              throw profileError;
-            }
+            .upsert([
+              {
+                user_id: user.id,
+                email: user.email || formData.email,
+                username: user?.email ? user.email.split('@')[0] : 'user'
+              }
+            ], {
+              onConflict: 'user_id'
+            });
+          
+          if (profileError) {
+            throw profileError;
           }
         }
         
