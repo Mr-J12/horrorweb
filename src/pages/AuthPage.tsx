@@ -39,20 +39,19 @@ const AuthPage: React.FC = () => {
         // Ensure user profile exists in users table
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
-          // Use upsert to create or update user profile
+          // Try to insert user profile, ignore if already exists
           const { error: profileError } = await supabase
             .from('users')
-            .upsert([
+            .insert([
               {
                 user_id: user.id,
                 email: user.email || formData.email,
                 username: user?.email ? user.email.split('@')[0] : 'user'
               }
-            ], {
-              onConflict: 'email'
-            });
+            ]);
           
-          if (profileError) {
+          // Only throw error if it's not a duplicate key error
+          if (profileError && profileError.code !== '23505') {
             throw profileError;
           }
         }
