@@ -42,6 +42,7 @@ const AuthPage: React.FC = () => {
           // Try to insert user profile, ignore if already exists
           const { error: profileError } = await supabase
             .from('users')
+<<<<<<< Updated upstream
             .insert([
               {
                 user_id: user.id,
@@ -53,6 +54,27 @@ const AuthPage: React.FC = () => {
           // Only throw error if it's not a duplicate key error
           if (profileError && profileError.code !== '23505') {
             throw profileError;
+=======
+            .select('user_id')
+            .eq('user_id', user.id)
+            .single();
+
+          // If no profile exists, create one
+          if (!existingUser) {
+            const { error: profileError } = await supabase
+              .from('users')
+              .insert([
+                {
+                  user_id: user.id,
+                  email: user.email || formData.email,
+                  username: user?.email ? user.email.split('@')[0] : 'user'
+                }
+              ]);
+            
+            if (profileError) {
+              throw profileError;
+            }
+>>>>>>> Stashed changes
           }
         }
         
