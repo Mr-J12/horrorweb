@@ -10,40 +10,34 @@ const RealLifePage: React.FC = () => {
 
   const incidents = [
     {
-      id: 'enfield-monster',
-      title: 'The Enfield Monster',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
-      excerpt: 'In 1973, a man in Enfield, Illinois told reporters that he saw a weird little creature lurking in his yard. Per the Mt. Vernon Register-News, resident Henry McDaniel stated: "It had three legs on it, a short body, two little short arms, and two pink eyes as big as flashlights."'
-    },
-    {
       id: 'suicide-hotel',
       title: 'The Suicide Hotel',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: 'sucidal_hotel.jpg',
       excerpt: 'In Colombia, the Hotel Del Salto has more stories as one of the most haunted places on Earth more than it does actual tenants. Turned into a museum, the hotel was designed by architect Carlos Arturo Tapias back in 1923, overlooking the Tequendama Falls.'
     },
     {
       id: 'axe-murder-house',
       title: 'The Axe Murder House',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: 'axe.jpeg',
       excerpt: 'The Villisca Axe Murder House in Villisca, Iowa is a well-known tourist attraction for ghost hunters and horror lovers alike. The site of a gruesome unsolved 1912 murder, in which six children and two adults had their skulls completely crushed by the axe of an unknown perpetrator.'
     },
     {
       id: 'haunted-doll',
       title: 'The Haunted Doll',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: 'doll.jpg',
       excerpt: 'When you think of haunted dolls, it\'s likely the creepy old Victorian-looking porcelain kind that springs to mind. Still, don\'t get too comfortable around any kids toys too soon, though: a Disney\'s Frozen Elsa doll that was gifted for Christmas 2013 in the Houston area made headlines.'
     },
     {
       id: 'deadly-exorcism',
       title: 'A Deadly Exorcism',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: 'exorcism.jpg',
       excerpt: 'In August 2016 in North London, 26-year-old Kennedy Ife began acting strange and aggressive following a pain in his throat. He reportedly bit his father, threatened to cut off his own penis, and complained of a python or snake inside of him before his family restrained him to a bed.'
     }
   ];
 
   return (
     <div>
-      <VideoBackground videoSrc="https://images.pexels.com/videos/3045163/free-video-3045163.mp4" />
+      <VideoBackground videoSrc="rlll.mp4" />
       
       <header className="header">
         <Navigation />

@@ -59,9 +59,10 @@ body {
 }
 
 .menu {
-  display: flex;
+  display: block;
   gap: 20px;
-  
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .menu a {
@@ -264,7 +265,7 @@ body {
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   
   .menu a {
@@ -450,4 +451,150 @@ body {
   .demon-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        justify-content: center; /* Center items when wrapping */
+        padding: 20px 10px; /* Reduced padding */
+        gap: 15px; /* Add some row gap if items wrap */
+    }
+
+    .logo {
+        font-size: 22px; /* Slightly smaller logo */
+        margin-bottom: 10px; /* Add space below if menu wraps to next line */
+        flex-basis: 100%; /* Take full width on this breakpoint to ensure clear stacking */
+        text-align: center;
+    }
+
+    .menu {
+        flex-basis: 100%; /* Allow menu to take full width */
+        justify-content: center; /* Center menu items */
+        gap: 10px; /* Smaller gap between menu links */
+        margin-bottom: 10px; /* Space below menu if auth section wraps below it */
+    }
+
+    .menu a {
+        font-size: 22px; /* Smaller menu links */
+    }
+
+    .auth-section {
+        flex-basis: 100%; /* Allow auth section to take full width */
+        justify-content: center; /* Center buttons */
+        gap: 10px; /* Smaller gap between auth buttons */
+    }
+
+    .auth-section .contact {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+
+    .h-text h1 {
+        font-size: 4em;
+    }
+
+    .content-section h2 {
+        font-size: 60px;
+    }
+
+    .demon-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        padding: 15px 5px; /* Even less padding */
+        flex-direction: column; /* Stack logo, menu, and auth section vertically */
+        gap: 15px; /* Space between stacked main nav sections */
+    }
+
+    .logo {
+        font-size: 18px; /* Even smaller logo for phones */
+        margin-bottom: 0; /* No extra margin here as flex-direction column handles it */
+        flex-basis: auto; /* Reset flex-basis if column */
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 8px; /* Closer spacing for stacked links */
+        flex-basis: auto; /* Reset flex-basis if column */
+        align-items: center; /* Center stacked links */
+        padding: 10px 0; /* Add some vertical padding to the menu block */
+    }
+
+    .menu a {
+        font-size: 18px; /* Smaller menu links for phones */
+    }
+
+    .auth-section {
+        flex-direction: row; /* Keep auth buttons side-by-side if they fit */
+        flex-basis: auto; /* Reset flex-basis if column */
+        padding: 0;
+    }
+    .auth-section .contact {
+        font-size: 16px; /* Smallest font for buttons */
+        padding: 6px 10px;
+    }
+    /* If auth buttons still don't fit side by side on very small screens, make them column */
+    @media (max-width: 380px) {
+        .auth-section {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .h-text h1 {
+        font-size: 2.5em; /* Smallest heading for phones */
+        margin-bottom: 15px;
+    }
+
+    .scroll-button {
+        width: 8em;
+        height: 3em;
+        font-size: 14px;
+    }
+
+    .content-section h2 {
+        font-size: 40px;
+        padding: 0 10px;
+    }
+
+    .content-section p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .content-image {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .content-image-left {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .footer-container p {
+        font-size: 24px;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        margin: 8px;
+    }
+
+    .demon-grid {
+        grid-template-columns: 1fr; /* Single column for demon categories on very small screens */
+        padding: 15px;
+    }
+
+    .form-container {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .form-container h1 {
+        font-size: 28px;
+    }
 }
