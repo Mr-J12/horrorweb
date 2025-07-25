@@ -187,7 +187,7 @@ body {
 }
 
 .content-image {
-  max-width: 650px;
+  max-width: 100%;
   margin: 2%;
   display: block;
   border: 3px solid rgb(255, 255, 255);

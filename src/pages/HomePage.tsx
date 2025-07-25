@@ -72,7 +72,7 @@ const HomePage: React.FC = () => {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg" 
+              src="paranormal.jpg" 
               alt="Ghost Hunting" 
               className="content-image"
             />
@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.pexels.com/photos/2156/sky-earth-space-working.jpg" 
+              src="parti.jpg" 
               alt="Ufology" 
               className="content-image"
             />
@@ -113,7 +113,7 @@ const HomePage: React.FC = () => {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg" 
+              src="big.jpg" 
               alt="Cryptozoology" 
               className="content-image"
             />
@@ -136,7 +136,7 @@ const HomePage: React.FC = () => {
           <div className="grid">
             <div className="card">
               <img 
-                src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg" 
+                src="warren.jpeg" 
                 alt="Ed and Lorraine Warren" 
                 className="content-image"
               />
@@ -146,6 +146,38 @@ const HomePage: React.FC = () => {
                 <strong>Born:</strong> January 31, 1927 and September 7, 1926 in Bridgeport, Connecticut, U.S<br />
                 <strong>Occupation:</strong> Paranormal investigators, authors<br />
                 <strong>Notable Investigations:</strong> Annabelle, Perron family (Conjuring), Arne Johnson (Conjuring 3)
+              </p>
+            </div>
+          </div>
+                    <div className="grid">
+            <div className="card">
+              <img 
+                src="gt.jpg" 
+                alt="Ed and Lorraine Warren" 
+                className="content-image"
+              />
+              <h3>Gaurav Tiwari</h3>
+              <p>
+                <strong>Names:</strong> Gaurav Tiwari<br />
+                <strong>Born:</strong> 2 September 1984 in Patna, Bihar, India<br />
+                <strong>Occupation:</strong> Paranormal investigators, Reality Show<br />
+                <strong>Notable Investigations:</strong> UFO field researcher and ParaNexus representative in India
+              </p>
+            </div>
+          </div>
+                    <div className="grid">
+            <div className="card">
+              <img 
+                src="mg.jpg" 
+                alt="Ed and Lorraine Warren" 
+                className="content-image"
+              />
+              <h3>Maurice Grosse</h3>
+              <p>
+                <strong>Names:</strong> Maurice Grosse<br />
+                <strong>Born:</strong> 6 March 1919 in London, England<br />
+                <strong>Occupation:</strong> Paranormal investigator, inventor, author<br />
+                <strong>Notable Investigations:</strong> Perron family (Conjuring 2)
               </p>
             </div>
           </div>
