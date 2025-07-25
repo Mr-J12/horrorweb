@@ -34,7 +34,29 @@ Father Mancuso was a lawyer, judge of the Catholic Court and psychotherapist who
 By mid-January 1976, after another attempt at a house blessing by George and Kathy, they experienced what would turn out to be their final night in the house. The Lutzes declined to give a full account of the events that took place on this occasion, describing them as "too frightening".
 
 On January 14, 1976, George and Kathy Lutz, with their three children and their dog Harry, left 112 Ocean Avenue, leaving all of their possessions behind. The next day, a mover arrived to remove the possessions to send to the Lutzes. He reported no paranormal phenomena while inside the house.`
-    }
+    },
+     'poltergeist':{
+      title: 'Poltergeist (1982)',
+      image: 'poltergeist.jpeg',
+      content: `Credited to Hooper, but every inch a Spielberg film, this is a barnstorming ghost story, set in one of the small suburban houses Spielberg knows and loves, where the family canary is called Tweety, and the kids read Captain America comics and eat at the Pizza Hut. Gradually this impossibly safe world is (in a truly ingenious plot development) invaded by something inside the family television
+       
+      Soon the plot takes off into a delirious fight with demonic forces suggestive of nothing so much as a Walt Disney horror movie; and although the sub-religious gobbledegook (including a tiresome midget medium) is hard to take. 
+      
+      it is consistently redeemed by its creators dazzling sense of craft For this one, Spielberg has even contrived a structural surprise which leaves the audience spinning like one of his houses haunted rooms, and arguably matches the opening of Psycho in its impudent virtuosity.`
+     },
+      'compliance': {
+      title: 'Compliance (2012)',
+      image: 'compliance.jpeg',
+      content : `In the early part of the last decade, over 70 phone calls were made to supermarkets and fast food restaurants across the US. The MO was always the same: the caller would claim to be a police officer, allege that an employee was guilty of theft, and request her colleagues to carry out a strip search. 
+      
+      The manager on duty would comply. After all, this was a cop calling. But on at least one occasion – in the Mount Washington, Kentucky branch of McDonald’s in 2004 – the caller’s demands went much further. ‘Compliance’ dramatises these events in clear, clinical detail, painting a stark, devastating portrait of human susceptibility in the face of an unseen authority.
+
+        Dreama Walker plays Becky, the young checkout girl at a ‘Chickwich’ franchise, who puts up scant resistance when store manager Sandra (Ann Dowd) calls her into the back office on the orders of Officer Daniels (Pat Healy) – who is actually a quiet suburban father hundreds of miles away. The chain of events that unfold strain believability, but writer-director Craig Zobel’s script hews disturbingly close to the facts.
+        
+        This approach doesn’t entirely work: although the overall mood of deepening moral compromise is compellingly sustained, Zobel does struggle to sell some of the later scenes. Part of the problem is the casting: while Dowd and Healy are flawless, Walker seems a little too headstrong as the abused Becky.
+        
+        But this doesn’t stop ‘Compliance’ from being a riveting, horrifying film, shot through with beautifully observed moments of unwelcome truth. It’s as much a critique of the enclosed systems of modern life – small towns, local authorities, dead-end jobs with meaningless heirarchies – as it is of sick individuals with cellphones.`
+      }
   };
 
   const story = storyData[id || ''];
