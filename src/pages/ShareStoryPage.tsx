@@ -44,7 +44,7 @@ const ShareStoryPage: React.FC = () => {
           {
             title: formData.title,
             content: formData.content,
-            image_url: formData.imageUrl || 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+            image_url: formData.imageUrl,
             user_id: user.id
           }
         ]);

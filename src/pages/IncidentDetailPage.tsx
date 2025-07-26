@@ -13,7 +13,7 @@ const IncidentDetailPage: React.FC = () => {
   const incidentData: { [key: string]: any } = {
     'suicide-hotel': {
       title: 'The Suicide Hotel',
-      image: 'sucidal_hotel.jpg',
+      image: '/sucidal_hotel.jpg',
       content: `The Cecil was built in 1924 by three hoteliers—William Banks Hanner, Charles L. Dix and Robert H. Schops—as a destination for business travelers and tourists. Designed by Loy Lester Smith in the Beaux Arts (or Art déco) style and constructed by W. W. Paden; the hotel cost $1.5 million to complete and boasted an opulent marble lobby with stained-glass windows, potted palms, and alabaster statuary.
 
 The three hoteliers invested about $2.5 million in the enterprise, with the knowledge that several similar hotels had been established elsewhere downtown, but within five years of its opening, the United States sank into the Great Depression. Although the hotel flourished as a fashionable destination throughout the 1940s, the decades beyond saw the hotel decline, as the nearby area known as Skid Row became increasingly populated with transients.
@@ -30,7 +30,7 @@ On December 13, 2021, the Cecil Hotel reopened as an affordable housing complex 
     },
      'axe-murder-house':{
       title: 'The Axe Murder House',
-      image: 'axe.jpeg',
+      image: '/axe.jpeg',
       content: `The Moore family consisted of parents Josiah B. (aged 43), Sarah (née Montgomery) (39), and their four children: Herman Montgomery (11), Mary Katherine (10), Arthur Boyd (7), and Paul Vernon (5). An affluent family, the Moores were well known and well liked in their community. On June 9, 1912, Mary Katherine Moore invited Ina Mae (8) and Lena Gertrude Stillinger (12) to spend the night at the Moore residence. That evening, the visiting girls and the Moore family attended the Presbyterian church where they participated in the Children's Day Program, which Sarah had coordinated. After the program ended at 9:30 p.m., the Moores and the Stillinger sisters walked to the Moores' house, arriving between 9:45 and 10 p.m.
 
         Discovery of the crime
@@ -54,7 +54,7 @@ On December 13, 2021, the Cecil Hotel reopened as an affordable housing complex 
      },
       'haunted-doll':{
       title: 'The Haunted Doll',
-      image: 'doll.jpg',
+      image: '/doll.jpg',
       content: `Though she doesn’t share the same porcelain skin and lifelike features as her cinematic counterpart, the Annabelle doll that lives in the Occult Museum of famed paranormal investigators Ed and Lorraine Warren, the pair that worked on the case, is made all the more creepy by how ordinary she appears.
 
         Annabelle’s stitched features, including her half-smile and bright orange triangular nose, evoke memories of childhood toys and simpler times.
@@ -83,7 +83,7 @@ On December 13, 2021, the Cecil Hotel reopened as an affordable housing complex 
       },
       'deadly-exorcism': {
       title: 'A Deadly Exorcism',
-      image: 'exorcism.jpg',
+      image: '/exorcism.jpg',
       content: `Seven members of a family who were accused of imprisoning and killing a man during a three-day "exorcism" have been cleared of all charges.
 
       Kennedy Ife, 26, died after he was allegedly restrained at a house in Enfield, north London, in August 2016.
