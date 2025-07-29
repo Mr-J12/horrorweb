@@ -206,59 +206,84 @@ body {
 }
 
 /* Footer Styles */
-.footer {
-  background-color: #111;
+:root {
+  --horror-red: #b22222; /* A dark, blood-like red */
+  --horror-red-glow: #ff0000;
+  --dark-bg: #0a0a0a;
+  --text-color: #e0e0e0;
 }
 
-.footer-container {
-  width: 100%;
-  padding: 35px 30px 20px;
-}
-
-.footer-container p {
+.horror-footer {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  font-family: 'Creepster', cursive; /* A classic horror font */
+  padding: 40px 20px 20px;
   text-align: center;
-  font-size: 30px;
-  color: white;
+  position: relative;
+  overflow: hidden;
+  /* A glowing top border to add an ominous feel */
+  box-shadow: 0 -5px 20px -5px var(--horror-red);
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  color: var(--horror-red);
+  text-shadow: 0 0 5px var(--horror-red-glow), 0 0 10px #000;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  animation: flicker 5s infinite alternate; /* Flickering text effect */
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  gap: 25px;
+  margin-bottom: 30px;
 }
 
 .social-icons a {
+  font-size: 2.2rem;
+  color: var(--horror-red);
   text-decoration: none;
-  padding: 10px;
-  background-color: white;
-  margin: 10px;
-  border-radius: 50%;
-  color: black;
-  font-size: 2em;
-  transition: 0.5s;
-}
-
-.social-icons a:hover {
-  background-color: #111;
-  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-shadow: 0 0 8px var(--horror-red);
 }
 
 .footer-bottom {
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
+  border-top: 1px dashed rgba(178, 34, 34, 0.5);
+  padding-top: 20px;
+  font-family: 'Courier New', Courier, monospace; /* A "typewriter" font for contrast */
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
 .footer-bottom p {
-  color: white;
+  margin: 5px 0;
+  letter-spacing: 1px;
 }
 
 .designer {
-  opacity: 0.5;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0px 5px;
+  color: var(--horror-red);
+  font-weight: bold;
+  text-shadow: 0 0 3px var(--horror-red);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* Keyframe animation for a flickering glow effect */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #000,
+      0 0 10px var(--horror-red-glow),
+      0 0 20px var(--horror-red-glow);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
 }
 
 /* Responsive Design */

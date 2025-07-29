@@ -1,66 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaReddit, FaGoogle } from 'react-icons/fa';
+
+const socialLinks = [
+  { icon: <FaFacebook />, href: 'https://www.facebook.com/search/top?q=paranormal+stories', label: 'Facebook' },
+  { icon: <FaGoogle />, href: 'https://www.google.com/search?client=opera-gx&q=paranormal+stories&sourceid=opera&ie=UTF-8&oe=UTF-8', label: 'Google'},
+  { icon: <FaInstagram />, href: 'https://www.instagram.com/explore/tags/horrorart/', label: 'Instagram' },
+  { icon: <FaTwitter />, href: 'https://twitter.com/search?q=horror+movie&src=typed_query', label: 'Twitter' },
+  { icon: <FaYoutube />, href: 'https://www.youtube.com/results?search_query=paranormal+stories', label: 'YouTube' }, // Fixed link
+];
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <p>For More Information</p>
+    <motion.footer
+      className="horror-footer"
+      // Add a subtle, unnerving shake animation
+      initial={{ y: 0 }}
+      animate={{ y: [0, -1, 1, -1, 1, 0] }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        repeatType: 'loop',
+        ease: 'easeInOut',
+      }}
+    >
+      <div className="footer-content">
+        <h3 className="footer-title">Follow Deep Into The Shadows...</h3>
         <div className="social-icons">
-          <motion.a 
-            href="https://www.facebook.com/search/top?q=paranormal%20witness%20episodes"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="fab fa-facebook"></i>
-          </motion.a>
-          <motion.a 
-            href="https://www.instagram.com/explore/tags/paranormalactivity/"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="fab fa-instagram"></i>
-          </motion.a>
-          <motion.a 
-            href="https://twitter.com/search?q=paranormal%20investigator&src=typed_query&f=live"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="fab fa-twitter"></i>
-          </motion.a>
-          <motion.a 
-            href="https://en.wikipedia.org/wiki/Category:Paranormal_investigators"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="fab fa-google-plus"></i>
-          </motion.a>
-          <motion.a 
-            href="https://www.youtube.com/results?search_query=real+paranormal+investigators"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="fab fa-youtube"></i>
-          </motion.a>
+          {socialLinks.map((social) => (
+            <motion.a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.label}
+              whileHover={{ scale: 1.2, color: '#ff4d4d' }} 
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              {social.icon}
+            </motion.a>
+          ))}
         </div>
       </div>
       <div className="footer-bottom">
         <p>
-          Copyright &copy;2024<br />
-          Designed by <span className="designer">Yashwant and Chirag</span>
+          Conjured in the Dark by <span className="designer">Yashwant and Chirag</span>
         </p>
+        <p className="copyright">© {new Date().getFullYear()}. The Nightmares are Real.</p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
