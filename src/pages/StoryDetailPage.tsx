@@ -13,7 +13,7 @@ const StoryDetailPage: React.FC = () => {
   const storyData: { [key: string]: any } = {
     'zodiac': {
       title: 'Zodiac (2007)',
-      image: 'zodiac.jpg',
+      image: '/zodiac.jpg',
       content: `In 'Zodiac', the serial killer is a setter of engrossing puzzles, a bit like a crossword compiler, or a certain type of film director. David Fincher's movies have always had this flavour: 'The Game', 'Panic Room', 'Fight Club', 'Alien3' are all cat-and-mouse affairs of one kind or another; 'Se7en' proposed multiple murder as literary pop quiz. 'Zodiac' isn't a puzzle film in quite that way; instead its subject is the compulsion to solve puzzles, and its coup is the creeping recognition, quite contrary to the flow of crime cinema, of how fruitless that compulsion can be.
 
 Stretching from 1969 to 1991, the film is based on the series of killings that petrified San Francisco during the '70s, and more specifically on the book written about them by Robert Graysmith. Played by a typically puppyish Jake Gyllenhaal, Graysmith was a San Francisco Chronicle cartoonist whose fascination with the murders engendered a kind of partnership with foppishly dissolute crime editor Paul Avery (a wrapped gift of a part for Robert Downey Jr), mirrored in the investigations of police detectives Mark Ruffalo and Anthony Edwards.
@@ -22,7 +22,7 @@ Portraying the Zodiac's attack on a young couple in a car in a deserted make-out
     },
     'amityville': {
       title: 'The Amityville Horror (1979)',
-      image: 'amityville.jpg',
+      image: '/amityville.jpg',
       content: `The book describes the house at 112 Ocean Avenue as remaining empty for 13 months after the DeFeo murders. In December 1975, George and Kathleen Lutz bought the house for what was considered to be a bargain price of $80,000. The five-bedroom house was built in Dutch Colonial style, and had a distinctive gambrel roof. It also had a swimming pool and a boathouse, as it was located on a canal.
 
 George and Kathy married in July 1975, and each had their own homes, but they wanted to start fresh with a new property. Kathy had three children from a previous marriage: Daniel, 9, Christopher, 7, and Melissa (Missy), 5. They also owned a crossbreed Malamute/Labrador dog named Harry. During their first inspection of the house, the real estate broker told them about the DeFeo murders and asked if this would affect their decision. After discussing the matter, they decided that it was not a problem.
@@ -37,7 +37,7 @@ On January 14, 1976, George and Kathy Lutz, with their three children and their 
     },
      'poltergeist':{
       title: 'Poltergeist (1982)',
-      image: 'poltergeist.jpeg',
+      image: '/poltergeist.jpeg',
       content: `Credited to Hooper, but every inch a Spielberg film, this is a barnstorming ghost story, set in one of the small suburban houses Spielberg knows and loves, where the family canary is called Tweety, and the kids read Captain America comics and eat at the Pizza Hut. Gradually this impossibly safe world is (in a truly ingenious plot development) invaded by something inside the family television
        
       Soon the plot takes off into a delirious fight with demonic forces suggestive of nothing so much as a Walt Disney horror movie; and although the sub-religious gobbledegook (including a tiresome midget medium) is hard to take. 
@@ -46,7 +46,7 @@ On January 14, 1976, George and Kathy Lutz, with their three children and their 
      },
       'compliance': {
       title: 'Compliance (2012)',
-      image: 'compliance.jpeg',
+      image: '/compliance.jpeg',
       content : `In the early part of the last decade, over 70 phone calls were made to supermarkets and fast food restaurants across the US. The MO was always the same: the caller would claim to be a police officer, allege that an employee was guilty of theft, and request her colleagues to carry out a strip search. 
       
       The manager on duty would comply. After all, this was a cop calling. But on at least one occasion – in the Mount Washington, Kentucky branch of McDonald’s in 2004 – the caller’s demands went much further. ‘Compliance’ dramatises these events in clear, clinical detail, painting a stark, devastating portrait of human susceptibility in the face of an unseen authority.
