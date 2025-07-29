@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="footer-bottom">
         <p>
-          Conjured in the Dark by <span className="designer">Yashwant and Chirag</span>
+          Conjured in the Dark <p>by</p> <span className="designer">Yashwant and Chirag</span>
         </p>
         <p className="copyright">© {new Date().getFullYear()}. The Nightmares are Real.</p>
       </div>

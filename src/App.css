@@ -207,7 +207,7 @@ body {
 
 /* Footer Styles */
 :root {
-  --horror-red: #b22222; /* A dark, blood-like red */
+  --horror-red: #b22222; 
   --horror-red-glow: #ff0000;
   --dark-bg: #0a0a0a;
   --text-color: #e0e0e0;
@@ -216,22 +216,21 @@ body {
 .horror-footer {
   background-color: var(--dark-bg);
   color: var(--text-color);
-  font-family: 'Creepster', cursive; /* A classic horror font */
+  font-family: 'Creepster', cursive;
   padding: 40px 20px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  /* A glowing top border to add an ominous feel */
   box-shadow: 0 -5px 20px -5px var(--horror-red);
 }
 
 .footer-title {
   font-size: 2.5rem;
   color: var(--horror-red);
-  text-shadow: 0 0 5px var(--horror-red-glow), 0 0 10px #000;
+  text-shadow: 0 0 5px var(--horror-red-glow), 0 0 10px #000; 
   letter-spacing: 3px;
   margin-bottom: 25px;
-  animation: flicker 5s infinite alternate; /* Flickering text effect */
+  animation: flicker 5s infinite alternate; 
 }
 
 .social-icons {
@@ -252,7 +251,7 @@ body {
 .footer-bottom {
   border-top: 1px dashed rgba(178, 34, 34, 0.5);
   padding-top: 20px;
-  font-family: 'Courier New', Courier, monospace; /* A "typewriter" font for contrast */
+  font-family: 'Courier New', Courier, monospace; 
   font-size: 0.9rem;
   opacity: 0.7;
 }
@@ -265,7 +264,7 @@ body {
 .designer {
   color: var(--horror-red);
   font-weight: bold;
-  text-shadow: 0 0 3px var(--horror-red);
+  animation: flicker 5s infinite alternate;
 }
 
 .copyright {
@@ -610,7 +609,7 @@ body {
     }
 
     .demon-grid {
-        grid-template-columns: 1fr; /* Single column for demon categories on very small screens */
+        grid-template-columns: 1fr; 
         padding: 15px;
     }
 
