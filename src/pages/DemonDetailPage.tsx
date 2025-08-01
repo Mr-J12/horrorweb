@@ -15,7 +15,7 @@ const DemonDetailPage: React.FC = () => {
     'amon': {
       name: 'Amon',
       title: 'Marquis of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/amon.jpg',
       origin: 'Before time was written, Amon was a high priest who defied the gods, seeking the power of forbidden knowledge. His audacity came at a great cost, and he was transformed into a demon, marked to be an eternal marquis of the underworld, punished for his ambition and disdain for boundaries.',
       characteristics: 'Amon can appear as a wolf with a serpent\'s tail, spewing voracious flames. However, if commanded, he takes on the form of a man with a grotesque blend of animal features: prominent canine teeth and the head of a crow. This appearance, besides being terrifying, serves as a reminder of the price of unwanted knowledge.',
       dominion: 'Amon, with his ability to know the past and the future, toys with human life, creating conflicts and resolving them at his whim. He has the power to influence minds, causing old friends to become sworn enemies and the deepest enmities to reconcile unexpectedly.',
@@ -27,7 +27,7 @@ const DemonDetailPage: React.FC = () => {
     'eligos': {
       name: 'Eligos',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/eligos.jpg',
       origin: 'Eligos was once a noble knight in the celestial armies, renowned for his strategic brilliance and unwavering loyalty. However, his fall came when he discovered the corruption within the heavenly hierarchy. Disillusioned and betrayed, he chose exile over complicity, becoming a Duke of Hell who reveals the secrets of war and hidden knowledge.',
       characteristics: 'Eligos appears as a goodly knight carrying a lance, an ensign, and a serpent. His armor gleams with an otherworldly light, and his horse breathes fire. Despite his fearsome appearance, he maintains the bearing of nobility, speaking with the eloquence of a courtier and the wisdom of a seasoned warrior.',
       dominion: 'Master of warfare and strategy, Eligos commands knowledge of all military arts and can reveal the location of hidden armies. He discovers secrets, uncovers plots, and can predict the outcome of battles. His influence extends to matters of loyalty, betrayal, and the true nature of conflict.',
@@ -39,7 +39,7 @@ const DemonDetailPage: React.FC = () => {
     'focalor': {
       name: 'Focalor',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: '/focalor.jpg',
       origin: 'Focalor was an angel of the waters before his fall, responsible for the rains that nourished the earth and the winds that filled the sails of ships. His rebellion came from witnessing the drowning of innocents in floods he was commanded to create. Now he rules over storms and seas, using his power to both destroy and save.',
       characteristics: 'Focalor manifests as a man with griffin\'s wings, appearing to rise from turbulent waters. His voice carries the sound of crashing waves and howling winds. When angered, storms gather around him, and the very air becomes charged with electricity.',
       dominion: 'Master of all waters and winds, Focalor can sink ships, calm storms, or summon tempests. He has power over drowning and can kill men in water for three days. Paradoxically, he also has the power to save those lost at sea and can grant safe passage through the most dangerous waters.',
@@ -51,7 +51,7 @@ const DemonDetailPage: React.FC = () => {
     'halphas': {
       name: 'Halphas',
       title: 'Count of Hell',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: '/halphas.jpg',
       origin: 'Halphas was once an architect of Heaven, designing the great towers and fortifications of the celestial realm. His fall came when he began to question why such defenses were necessary in a perfect realm. Cast out for his doubts, he now builds towers of war and discord in the mortal world.',
       characteristics: 'Halphas appears as a stock-dove with a hoarse voice, but can take the form of a man when commanded. In human form, he appears as a master builder covered in stone dust, carrying architectural tools that seem to shift and change before the observer\'s eyes.',
       dominion: 'Master builder and destroyer, Halphas constructs towers, fortifications, and cities, but also has the power to send men to war and to places of conflict. His buildings are marvels of engineering but often become centers of strife and discord.',
@@ -63,7 +63,7 @@ const DemonDetailPage: React.FC = () => {
     'leraje': {
       name: 'Leraje',
       title: 'Marquis of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/leraje.jpg',
       origin: 'Leraje was Heaven\'s greatest archer, whose arrows never missed their mark and could pierce any armor. His fall came when he was ordered to shoot down a group of angels who had shown mercy to humans. Refusing the command, he was cast out and now uses his skills to incite conflicts and battles.',
       characteristics: 'Leraje appears as an archer clad in green, carrying a bow that seems to be made of living wood. His arrows are said to be forged from the regrets of the fallen, and each shot carries with it the weight of sorrow and conflict.',
       dominion: 'Master of archery and warfare, Leraje can cause great battles and make wounds putrefy. He has the power to incite conflicts between friends and nations, turning minor disagreements into major wars. His arrows can wound both body and soul.',
@@ -77,7 +77,7 @@ const DemonDetailPage: React.FC = () => {
     'aim': {
       name: 'Aim',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/aim.jpg',
       origin: 'Aim was once a seraph of divine fire, responsible for purifying souls and burning away sin. His transformation into a demon came when he began to take pleasure in the destruction rather than the purification. Now he embodies the destructive aspect of fire, burning without purpose of renewal.',
       characteristics: 'Aim appears as a handsome man with three heads - one of a serpent, one of a man, and one of a cat. He rides a viper and carries a firebrand in his hand. Flames dance around him constantly, and his presence causes temperatures to rise dramatically.',
       dominion: 'Master of fire and destruction, Aim can set cities ablaze and make men witty in all ways. He has power over all forms of combustion and can grant intelligence and cunning, though often at a terrible price. His fire burns both matter and spirit.',
@@ -89,7 +89,7 @@ const DemonDetailPage: React.FC = () => {
     'andras': {
       name: 'Andras',
       title: 'Marquis of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/andras.jpg',
       origin: 'Andras was an angel of harmony who helped maintain peace between different factions in Heaven. His fall came when he became obsessed with the idea that conflict was necessary for growth. He began sowing discord among the angels, believing that struggle would make them stronger.',
       characteristics: 'Andras appears as an angel with the head of an owl or raven, riding upon a strong black wolf and wielding a sharp sword. His presence brings an aura of tension and unease, and his voice can turn the sweetest words into sources of conflict.',
       dominion: 'Master of discord and enmity, Andras sows quarrels and can kill the master, servants, and all assistants. He delights in turning friends into enemies and peaceful situations into battlegrounds. His influence can destroy relationships and communities.',
@@ -101,7 +101,7 @@ const DemonDetailPage: React.FC = () => {
     'andrealphus': {
       name: 'Andrealphus',
       title: 'Marquis of Hell',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: '/andrealphus.jpg',
       origin: 'Andrealphus was Heaven\'s greatest mathematician and astronomer, responsible for maintaining the celestial mechanics and the movement of stars. His fall came from pride in his knowledge and the belief that he understood creation better than its Creator.',
       characteristics: 'Andrealphus appears as a peacock with great noises, but can take human form as a man surrounded by geometric patterns and celestial symbols. His feathers display mathematical equations and star charts that shift and change constantly.',
       dominion: 'Master of geometry, astronomy, and all mathematical arts, Andrealphus can teach these sciences perfectly and can transform men into birds. His knowledge encompasses the hidden mathematical principles that govern reality itself.',
@@ -113,7 +113,7 @@ const DemonDetailPage: React.FC = () => {
     'flauros': {
       name: 'Flauros',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: '/flauros.jpg',
       origin: 'Flauros was an angel of truth and revelation, tasked with exposing lies and bringing hidden things to light. His corruption came when he began to use truth as a weapon, revealing secrets not to help but to harm, turning his gift into a tool of destruction.',
       characteristics: 'Flauros appears as a terrible leopard, but when commanded, takes the form of a man with fiery eyes. His gaze can see through all deceptions and illusions, and his presence makes it impossible for lies to be spoken in his vicinity.',
       dominion: 'Master of truth and deception, Flauros can reveal all things past, present, and future. He can expose enemies and their plans, but also has the power to destroy through revelation. His truth often comes at a devastating cost.',
@@ -125,7 +125,7 @@ const DemonDetailPage: React.FC = () => {
     'furfur': {
       name: 'Furfur',
       title: 'Count of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/furfur.jpg',
       origin: 'Furfur was an angel of love and harmony, responsible for bringing hearts together and creating lasting bonds. His fall came when he became obsessed with the passionate, destructive aspects of love, preferring the intensity of obsession over the peace of true affection.',
       characteristics: 'Furfur appears as a hart or deer with a fiery tail, but when commanded, takes the form of an angel. He speaks with a voice like thunder and lightning, and his presence can incite both love and storms with equal intensity.',
       dominion: 'Master of love and tempests, Furfur can create love between man and woman, but also commands thunder, lightning, and great winds. His influence over emotions is as powerful as his control over the weather.',
@@ -139,7 +139,7 @@ const DemonDetailPage: React.FC = () => {
     'lucifer': {
       name: 'Lucifer',
       title: 'King of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/lucifer.jpg',
       origin: 'In the annals of heaven, Lucifer was distinguished not only by his resplendent beauty but also by his keen intellect and ambition. Hailing from the brightest reaches of creation, he was the jewel of the celestial crown. However, his unyielding pride and growing resentment toward God\'s new creations, specifically humans, clouded his judgment.',
       characteristics: 'Lucifer is a master of metamorphosis. While his true form reflects an ethereal and majestic beauty, with flickering wings of radiant light, when he seeks to terrorize, he appears as a crimson entity, with sharp horns and burning eyes that consume everything in his path.',
       dominion: 'Lucifer has a particular interest in human vices and weaknesses. He unleashes envy, greed, and lust in the hearts of men, seizing any opportunity to lead them astray. His ability to manipulate fire and air, as well as his influence over the human mind, makes him a formidable and dangerous force.',
@@ -151,7 +151,7 @@ const DemonDetailPage: React.FC = () => {
     'agares': {
       name: 'Agares',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/agares.jpg',
       origin: 'Agares was once the angel responsible for divine communication, helping to translate the word of God into languages that mortals could understand. His fall came when he began to corrupt these translations, introducing subtle changes that led to misunderstandings and conflicts.',
       characteristics: 'Agares appears as a fair old man riding upon a crocodile and carrying a goshawk on his fist. His voice can speak in any language ever created, and he can make the earth tremble with his words. His presence causes confusion in communication.',
       dominion: 'Master of languages and communication, Agares can teach all tongues and can make those who run stand still. He has power over earthquakes and can cause the earth to shake. His influence extends to all forms of communication and transportation.',
@@ -163,7 +163,7 @@ const DemonDetailPage: React.FC = () => {
     'alloces': {
       name: 'Alloces',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: '/alloces.jpg',
       origin: 'Alloces was Heaven\'s chief astronomer, responsible for charting the courses of stars and planets. His fall came from his obsession with predicting the future through celestial movements, eventually believing that fate was fixed and free will was an illusion.',
       characteristics: 'Alloces appears as a soldier riding upon a great horse, with a lion\'s face that is very red and having flaming eyes. His voice is big and rough, and he teaches astronomy and all liberal sciences. Star charts appear in the air around him.',
       dominion: 'Master of astronomy and liberal sciences, Alloces can teach the virtues of stars and planets. He has knowledge of all scientific principles and can reveal the influence of celestial bodies on earthly events.',
@@ -175,7 +175,7 @@ const DemonDetailPage: React.FC = () => {
     'asmoday': {
       name: 'Asmoday',
       title: 'King of Hell',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: '/asmoday.jpg',
       origin: 'Asmoday was one of the seraphim, closest to the divine throne and keeper of God\'s most sacred secrets. His fall came from his belief that these secrets should be shared with all creation, leading him to steal divine knowledge and scatter it throughout the realms.',
       characteristics: 'Asmoday appears with three heads - one of a bull, one of a man, and one of a ram. He has the tail of a serpent and breathes fire. He rides upon an infernal dragon and carries a lance with a banner. His presence reveals hidden treasures and knowledge.',
       dominion: 'King of hidden knowledge and treasures, Asmoday can make men invisible and reveal all treasures. He teaches arithmetic, astronomy, geometry, and all handicrafts. His knowledge encompasses both material and spiritual wealth.',
@@ -187,7 +187,7 @@ const DemonDetailPage: React.FC = () => {
     'astaroth': {
       name: 'Astaroth',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/astaroth.jpg',
       origin: 'Astaroth was once a throne angel, responsible for divine justice and the revelation of truth. Her fall came when she began to question the fairness of divine judgment, eventually deciding that mortals deserved to know their fate in advance.',
       characteristics: 'Astaroth appears as a hurtful angel riding upon an infernal beast like a dragon, holding a viper in her right hand. She has a foul breath and teaches mathematical sciences and handicrafts. Her presence brings both wisdom and corruption.',
       dominion: 'Master of past, present, and future, Astaroth can answer all questions about hidden things and can discover all secrets. She teaches liberal sciences and can make men wonderfully knowing in all liberal arts.',
@@ -201,7 +201,7 @@ const DemonDetailPage: React.FC = () => {
     'amdusias': {
       name: 'Amdusias',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/amdusias.jpg',
       origin: 'Amdusias was the angel of divine music, responsible for the celestial harmonies that maintained the order of creation. His fall came when he became enamored with the discordant music of mortal emotions, finding beauty in suffering and chaos.',
       characteristics: 'Amdusias appears as a unicorn, but when commanded, takes human form surrounded by the sounds of trumpets and all manner of musical instruments. Trees bend to hear his music, and his melodies can move both hearts and nature itself.',
       dominion: 'Master of music and nature, Amdusias can make trees bend and incline according to his will. His music can influence emotions, control natural forces, and even bend reality to his desires. He grants musical talent but at a price.',
@@ -213,7 +213,7 @@ const DemonDetailPage: React.FC = () => {
     'andromalius': {
       name: 'Andromalius',
       title: 'Count of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/andromalius.jpg',
       origin: 'Andromalius was an angel of divine justice, tasked with punishing those who stole from the divine treasury and violated sacred trusts. His fall came when he began to take pleasure in punishment itself, becoming more interested in vengeance than justice.',
       characteristics: 'Andromalius appears as a man holding a great serpent in his hand. His presence brings an aura of judgment and retribution. He can see through all deceptions and his gaze reveals the guilt hidden in mortal hearts.',
       dominion: 'Master of justice and vengeance, Andromalius can discover thieves and recover stolen goods. He punishes dishonesty and can reveal hidden treasures. His influence extends to all matters of theft, fraud, and betrayal.',
@@ -225,7 +225,7 @@ const DemonDetailPage: React.FC = () => {
     'bael': {
       name: 'Bael',
       title: 'King of Hell',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: '/bael.jpg',
       origin: 'Bael was the first angel created, the prototype for all others, and held dominion over the power of visibility and manifestation. His fall came from pride in being the first, believing this gave him rights equal to the Creator himself.',
       characteristics: 'Bael appears with three heads - one of a cat, one of a toad, and one of a man. He can make those who invoke him invisible and speaks with a hoarse voice. His presence distorts perception and reality itself.',
       dominion: 'First King of Hell and master of invisibility, Bael can make men wise and invisible. He has power over illusion and can grant the ability to see through deceptions while remaining hidden from enemies.',
@@ -237,7 +237,7 @@ const DemonDetailPage: React.FC = () => {
     'barbatos': {
       name: 'Barbatos',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: '/barbatos.jpg',
       origin: 'Barbatos was the angel responsible for communication between all living creatures, able to understand and speak with every form of life. His fall came when he began to use this gift to spread discord between species rather than harmony.',
       characteristics: 'Barbatos appears as an archer in green, accompanied by four noble kings and their companies of great troops. He can speak with all animals and understands the singing of birds. His presence brings the sounds of the wild.',
       dominion: 'Master of animal communication and hidden treasures, Barbatos can speak with all beasts and birds. He can reveal treasures hidden by magicians and has knowledge of past and future events through the voices of nature.',
@@ -249,7 +249,7 @@ const DemonDetailPage: React.FC = () => {
     'belial': {
       name: 'Belial',
       title: 'King of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/belial.jpg',
       origin: 'Belial was an angel of divine order, responsible for maintaining the hierarchies and structures of Heaven. His fall came when he decided that power should be based on strength and cunning rather than divine appointment, leading him to rebel against the established order.',
       characteristics: 'Belial appears as two beautiful angels sitting in a chariot of fire. He speaks with a comely voice and was created after Lucifer. His beauty is deceptive, hiding a nature devoted to corruption and the overthrow of legitimate authority.',
       dominion: 'King of manipulation and political power, Belial can distribute senatorships and dignities. He causes favor of friends and foes and can grant political influence and social standing, but always with corrupt intentions.',
@@ -263,7 +263,7 @@ const DemonDetailPage: React.FC = () => {
     'amy': {
       name: 'Amy',
       title: 'President of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/amy.jpg',
       origin: 'Amy was an angel of divine wisdom, responsible for teaching the liberal arts to mortals and guiding their intellectual development. His fall came when he became obsessed with the power that knowledge could bring, eventually using wisdom as a tool for domination.',
       characteristics: 'Amy appears as a flaming fire, but when commanded, takes the shape of a man. He teaches astrology and all liberal sciences perfectly and can make familiars. His presence ignites the mind but can also burn away moral restraints.',
       dominion: 'Master of astrology and liberal sciences, Amy can teach all forms of knowledge and can reveal the influence of stars on human affairs. He grants intellectual power but often at the cost of wisdom and compassion.',
@@ -275,7 +275,7 @@ const DemonDetailPage: React.FC = () => {
     'bathin': {
       name: 'Bathin',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/bathin.jpg',
       origin: 'Bathin was an angel of earthly treasures, responsible for revealing the virtues of herbs and precious stones to those who would use them for healing and good. His corruption came when he began to reveal these secrets to those who would use them for harm.',
       characteristics: 'Bathin appears as a strong man with the tail of a serpent, riding upon a pale horse. He knows the virtues of all herbs and precious stones and can transport men suddenly from one country to another.',
       dominion: 'Master of herbs and precious stones, Bathin can reveal the hidden properties of all natural materials. He has power over transportation and can move people instantly across great distances.',
@@ -287,7 +287,7 @@ const DemonDetailPage: React.FC = () => {
     'buer': {
       name: 'Buer',
       title: 'President of Hell',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: '/buer.jpg',
       origin: 'Buer was an angel of divine healing, responsible for teaching the arts of medicine and philosophy to mortals. His fall came when he began to see disease and suffering as necessary for spiritual growth, leading him to withhold healing from those who needed it most.',
       characteristics: 'Buer appears as a centaur with the body of a man and the legs of a horse, or sometimes as a wheel with five legs radiating from the center. He teaches philosophy, logic, and the virtues of all herbs.',
       dominion: 'Master of philosophy and healing, Buer can teach moral and natural philosophy, logic, and the virtues of herbs. He can heal all distempers and give good familiars. His knowledge encompasses both physical and spiritual healing.',
@@ -299,7 +299,7 @@ const DemonDetailPage: React.FC = () => {
     'decarabia': {
       name: 'Decarabia',
       title: 'Marquis of Hell',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: '/decarabia.jpg',
       origin: 'Decarabia was an angel responsible for revealing the hidden virtues of creation to mortals, particularly the secret properties of birds and precious stones. His fall came when he began to use this knowledge to deceive rather than enlighten.',
       characteristics: 'Decarabia appears as a star in a pentacle, but when commanded, takes the form of a man. He discovers the virtues of birds and precious stones and can make the similitude of all kinds of birds to fly before the exorcist.',
       dominion: 'Master of birds and precious stones, Decarabia can reveal the hidden properties of gems and the secret language of birds. He can create illusions of flying birds and understands the omens they carry.',
@@ -311,7 +311,7 @@ const DemonDetailPage: React.FC = () => {
     'foras': {
       name: 'Foras',
       title: 'President of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/foras.jpg',
       origin: 'Foras was an angel of divine logic, responsible for teaching mortals the principles of reasoning and ethical thinking. His fall came when he began to use logic to justify evil acts, proving that any action could be rationalized with sufficient cleverness.',
       characteristics: 'Foras appears as a strong man in human shape. He teaches the arts of logic and ethics, can make men invisible, and can recover lost things. He can also discover treasures and teach the virtues of precious stones.',
       dominion: 'Master of logic and ethics, Foras can teach the art of reasoning and moral philosophy. He can make men invisible, recover lost objects, and reveal hidden treasures. His influence extends to all forms of logical thinking.',
@@ -325,7 +325,7 @@ const DemonDetailPage: React.FC = () => {
     'beleth': {
       name: 'Beleth',
       title: 'King of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/beleth.jpg',
       origin: 'Beleth was an angel of divine love, responsible for creating the bonds of affection between souls. His fall came when he became obsessed with the passionate, possessive aspects of love, preferring the intensity of desire over the peace of true affection.',
       characteristics: 'Beleth appears riding on a pale horse with trumpets and other kinds of musical instruments playing before him. He is very furious at his first appearance, but when properly constrained, he becomes gentle and grants love.',
       dominion: 'King of love and passion, Beleth can cause love between man and woman until the exorcist desires it. His influence extends to all matters of the heart, but his love often becomes obsession and his passion turns to possession.',
@@ -337,7 +337,7 @@ const DemonDetailPage: React.FC = () => {
     'dantalion': {
       name: 'Dantalion',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg',
+      image: '/dantalion.jpg',
       origin: 'Dantalion was an angel of divine harmony, responsible for creating the music that bound souls together in perfect understanding. His fall came when he began to use this music to manipulate emotions and thoughts rather than inspire them.',
       characteristics: 'Dantalion appears as a man with many countenances, all of men\'s and women\'s faces. He holds a book in his right hand and can teach all arts and sciences. He knows the thoughts of all people and can change them at will.',
       dominion: 'Master of thoughts and emotions, Dantalion can know the thoughts of any person and can change them. He teaches all arts and sciences and can create love or hatred between people through the manipulation of their thoughts.',
@@ -349,7 +349,7 @@ const DemonDetailPage: React.FC = () => {
     'gaap': {
       name: 'Gaap',
       title: 'Prince of Hell',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+      image: '/gaap.jpg',
       origin: 'Gaap was an angel of divine transportation, responsible for guiding souls between different realms and states of being. His fall came when he began to transport souls to places they should not go, leading them astray from their destined paths.',
       characteristics: 'Gaap appears as a man with bat wings when he takes human form. He can make men insensible or ignorant, and can transport them quickly to any place. He can also teach philosophy and all liberal sciences.',
       dominion: 'Prince of transportation and philosophy, Gaap can carry men speedily from one place to another and can make them invisible. He teaches philosophy and can make men ignorant or wise as he chooses.',
@@ -361,7 +361,7 @@ const DemonDetailPage: React.FC = () => {
     'gremory': {
       name: 'Gremory',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: '/gremory.jpg',
       origin: 'Gremory was an angel of divine treasure, responsible for revealing hidden riches to those who would use them for good. Her fall came when she began to use wealth as a tool of corruption, offering riches to those who would compromise their values.',
       characteristics: 'Gremory appears as a beautiful woman with a duchess\'s crown tied about her waist, riding upon a great camel. She tells of all things past, present, and future, and can procure the love of women both young and old.',
       dominion: 'Duchess of treasures and love, Gremory can reveal hidden treasures and can procure the love of women. She knows all things past, present, and future, and can grant both material and emotional wealth.',
@@ -373,7 +373,7 @@ const DemonDetailPage: React.FC = () => {
     'sallos': {
       name: 'Sallos',
       title: 'Duke of Hell',
-      image: 'https://images.pexels.com/photos/1666065/pexels-photo-1666065.jpeg',
+      image: '/sallos.jpg',
       origin: 'Sallos was an angel of divine peace, responsible for creating harmony between opposing forces and bringing reconciliation to conflicts. His fall came when he began to create false peace through manipulation rather than true understanding.',
       characteristics: 'Sallos appears as a gallant soldier wearing a ducal crown and riding upon a crocodile. He promotes love between man and woman and speaks gently, but his peace often comes at the cost of truth.',
       dominion: 'Duke of love and peace, Sallos can cause love between man and woman and can bring peace to conflicts. However, his solutions often involve compromise of principles rather than true resolution.',
