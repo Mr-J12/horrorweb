@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaReddit, FaGoogle } from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: <FaFacebook />, href: 'https://www.facebook.com/search/top?q=paranormal+stories', label: 'Facebook' },
-  { icon: <FaGoogle />, href: 'https://www.google.com/search?client=opera-gx&q=paranormal+stories&sourceid=opera&ie=UTF-8&oe=UTF-8', label: 'Google'},
-  { icon: <FaInstagram />, href: 'https://www.instagram.com/explore/tags/horrorart/', label: 'Instagram' },
-  { icon: <FaTwitter />, href: 'https://twitter.com/search?q=horror+movie&src=typed_query', label: 'Twitter' },
-  { icon: <FaYoutube />, href: 'https://www.youtube.com/results?search_query=paranormal+stories', label: 'YouTube' }, // Fixed link
+  { icon: <FaFacebook />, href: 'https://www.facebook.com/search/top?q=paranormal+experience', label: 'Facebook' },
+  { icon: <FaGoogle />, href: 'https://www.google.com/search?client=opera-gx&q=paranormal+experience&sourceid=opera&ie=UTF-8&oe=UTF-8', label: 'Google'},
+  { icon: <FaReddit />, href: 'https://www.reddit.com/r/india/comments/x7f17d/what_is_your_paranormal_experience/', label: 'Reddit' },
+  { icon: <FaTwitter />, href: 'https://x.com/search?q=paranormal%20experience&src=typed_query&f=top', label: 'Twitter' },
+  { icon: <FaYoutube />, href: 'https://www.youtube.com/results?search_query=paranormal+experience', label: 'YouTube' }, // Fixed link
 ];
 
 const Footer: React.FC = () => {
@@ -45,9 +45,9 @@ const Footer: React.FC = () => {
       </div>
       <div className="footer-bottom">
         <p>
-          Conjured in the Dark <p>by</p> <span className="designer">Yashwant and Chirag</span>
+          Conjured in the Dark <p>by</p> <span className="designer">Yashwant Singh Rawat</span>
         </p>
-        <p className="copyright">© {new Date().getFullYear()}. The Nightmares are Real.</p>
+        <p className="copyright">©{new Date().getFullYear()} The Nightmares are Real.</p>
       </div>
     </motion.footer>
   );

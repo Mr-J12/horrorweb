@@ -550,7 +550,10 @@ body {
     .menu a {
         font-size: 18px; /* Smaller menu links for phones */
     }
-
+    .content-section h2 {
+        font-size: 30px;
+        padding: 0 10px;
+    }
     .auth-section {
         flex-direction: row; /* Keep auth buttons side-by-side if they fit */
         flex-basis: auto; /* Reset flex-basis if column */
@@ -580,7 +583,7 @@ body {
     }
 
     .content-section h2 {
-        font-size: 40px;
+        font-size: 30px;
         padding: 0 10px;
     }
 

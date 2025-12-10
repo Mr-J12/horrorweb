@@ -9,6 +9,7 @@ import ShareStoryPage from './pages/ShareStoryPage';
 import DemonDetailPage from './pages/DemonDetailPage';
 import StoryDetailPage from './pages/StoryDetailPage';
 import IncidentDetailPage from './pages/IncidentDetailPage';
+import ViewStoryPage from './pages/ViewStoryPage';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/stories" element={<StoriesPage />} />
           <Route path="/story/:id" element={<StoryDetailPage />} />
           <Route path="/share-story" element={<ShareStoryPage />} />
+          <Route path="/view-story" element={<ViewStoryPage />} />
           <Route path="/real-life" element={<RealLifePage />} />
           <Route path="/incident/:id" element={<IncidentDetailPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />

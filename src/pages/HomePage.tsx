@@ -5,6 +5,7 @@ import VideoBackground from '../components/VideoBackground';
 import Footer from '../components/Footer';
 
 const HomePage: React.FC = () => {
+  window.scrollTo(0, 0);
   const contentRef = useRef<HTMLDivElement>(null);
 
   const scrollToContent = () => {

@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import { supabase } from '../lib/supabase';
 
 const FeedbackPage: React.FC = () => {
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: '',

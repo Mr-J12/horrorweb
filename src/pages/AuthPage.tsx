@@ -5,6 +5,7 @@ import VideoBackground from '../components/VideoBackground';
 import { supabase } from '../lib/supabase';
 
 const AuthPage: React.FC = () => {
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({

@@ -6,6 +6,7 @@ import VideoBackground from '../components/VideoBackground';
 import Footer from '../components/Footer';
 
 const RealLifePage: React.FC = () => {
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
 
   const incidents = [

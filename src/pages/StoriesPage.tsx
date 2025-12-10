@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import VideoBackground from '../components/VideoBackground';
 import Footer from '../components/Footer';
 
+
 const StoriesPage: React.FC = () => {
   const navigate = useNavigate();
 
@@ -48,7 +49,7 @@ const StoriesPage: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1>Stories</h1>
+          <h1>Paranormal Stories</h1>
           <button className="scroll-button" onClick={() => document.getElementById('content')?.scrollIntoView({ behavior: 'smooth' })}>
             Click To Explore
           </button>
@@ -90,14 +91,21 @@ const StoriesPage: React.FC = () => {
           viewport={{ once: true }}
           style={{ textAlign: 'center', marginTop: '40px' }}
         >
-          <h3>Share Your Own Story</h3>
-          <p>Had a paranormal experience you'd like to share? We'd love to hear from you.</p>
+          <h3>Want to Share or View Paranormal Incidents</h3>
+          <p>Had a paranormal experience or want to view stories from others?</p>
           <button 
             className="btn" 
             onClick={() => navigate('/share-story')}
-            style={{ marginTop: '20px', maxWidth: '200px' }}
+            style={{ marginTop: '20px', maxWidth: '200px', fontFamily: 'Courier New, Courier, monospace' }}
           >
             Share Your Story
+          </button>
+          <button
+            className="btn"
+            onClick={() => navigate('/view-story')}
+            style={{ marginTop: '20px', maxWidth: '200px', marginLeft: '30px', fontFamily: 'Courier New, Courier, monospace' }}
+          >
+            View Story
           </button>
         </motion.div>
       </div>
